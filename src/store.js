@@ -4,7 +4,6 @@ import Vuex from 'vuex';
 Vue.use(Vuex);
 
 const data = [];
-
 const state = {
   modules: {
     base: '基本信息',
@@ -24,8 +23,26 @@ const state = {
       web: 'www.suiyi.com',
     },
   skillMsg: sessionStorage.getItem('skillMsg')
-    ? JSON.parse(sessionStorage.getItem('skillMsg'))
-    : undefined,
+    ? JSON.parse(sessionStorage.getItem('skillMsg')).skillMsg
+    : `<ul>
+    <li>
+        会HTML5,CSS3, $JavaScript  
+        能够使用原生js独立制作精美网页
+    </li>
+    <li>
+        掌握H5语义化标签 nav\\area\\canvas 等
+        掌握css3动画、过度、弹性盒子布局、媒体查询等等
+    </li>
+    <li>熟练掌握盒模型、常用布局以及浏览器和移动设备兼容性；</li>
+    <li>
+        熟悉前端自动化和工程化；对Webpack等常见构建工具有自己的认知与理解；
+    </li>
+    <li>有使用NodeJS开发、，熟练使用Git；</li>
+    <li>其他：	
+    会jquey制作动画页面
+    会用less、bootstrap制作页面，有项目在git上
+    理解MVC、MVVM的相关思想以及HTTP、commonjs的相关规范......</li>
+</ul>`,
   skillRenderMsg: sessionStorage.getItem('skillMsg')
     ? JSON.parse(sessionStorage.getItem('skillMsg')).skillRenderMsg
     : `<ul>
@@ -61,7 +78,7 @@ const state = {
       <li>技术点：vuex的使用，以及router，es6语法等等</li> 
       <li>源码链接：https://github.com/SuJinTuan/reume-vue-sjt</li> 
       <li>预览链接:因为项目的结构是有了但是，整体的内容存在一些BUG</li> 
-      <li>描述：通过vue和iview来编写，这个项目最主要的还是插件html2的转化以及markdown的模板插件；</li> 
+      <li>描述：这是一个简历生成器，通过vue和iview来编写，这个项目最主要的还是插件html2的转化以及markdown的模板插件；</li> 
       </ul>`,
     },
     {
