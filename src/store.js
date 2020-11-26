@@ -78,7 +78,9 @@ const state = {
       <li>技术点：vuex的使用，以及router，es6语法等等</li> 
       <li>源码链接：https://github.com/SuJinTuan/reume-vue-sjt</li> 
       <li>预览链接:因为项目的结构是有了但是，整体的内容存在一些BUG</li> 
-      <li>描述：这是一个简历生成器，通过vue和iview来编写，这个项目最主要的还是插件html2的转化以及markdown的模板插件；</li> 
+      <li>描述：这是一个简历生成器，通过vue和iview来编写，这个项目最主要的还是插件html2的转化以及markdown的模板插件；
+      最大的特点就是通过state数据的共享，实现对象状态的管理。
+      </li> 
       </ul>`,
     },
     {
